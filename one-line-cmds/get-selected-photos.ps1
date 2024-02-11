@@ -1,1 +1,1 @@
-cat list.txt | % { ls -r "**/$_" } | % { cp "$($_.FullName)" "<destination>" }
+cat list.txt | % { ls -r "**/$_.jpg" } | % { cp $_ "<destination>" }
