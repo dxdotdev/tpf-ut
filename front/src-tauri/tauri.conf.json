@@ -19,7 +19,7 @@
 		},
 		"windows": [
 			{
-				"title": "dx | utilities",
+				"decorations": false,
 				"width": 1024,
 				"height": 640
 			}
