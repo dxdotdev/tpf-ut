@@ -7,4 +7,21 @@ export default {
 		extend: {},
 	},
 	plugins: [daisyui],
+	daisyui: {
+		themes: [
+			{
+				default: {
+					primary: "#0063B1",
+					secondary: "#09185E",
+					accent: "#0063B1",
+					neutral: "#F2F8FC",
+					"base-100": "#09185e",
+					info: "#0078d4",
+					success: "#00cc6a",
+					warning: "#ffb800",
+					error: "#e81123",
+				},
+			},
+		],
+	},
 };
