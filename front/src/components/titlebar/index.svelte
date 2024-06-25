@@ -13,7 +13,7 @@
   <div class="flex">
     <details class="dropdown dropdown-end">
       <summary class="btn btn-ghost w-12 h-8 min-h-10 rounded-none">
-        <ChevronDown class="w-5 h-5" strokeWidth="2.5" />
+        <ChevronDown class="w-5 h-5" />
       </summary>
 
       <ul class="dropdown-content menu rounded-box bg-secondary">
@@ -22,15 +22,15 @@
     </details>
 
     <button on:click={appWindow.minimize} class="btn btn-ghost w-12 h-8 min-h-10 rounded-none">
-      <Minus class="w-5 h-5" strokeWidth="2.5" />
+      <Minus class="w-5 h-5" />
     </button>
 
     <button on:click={appWindow.toggleMaximize} class="btn btn-ghost w-12 h-8 min-h-10 rounded-none">
-      <Maximize class="w-5 h-5" strokeWidth="2.5" />
+      <Maximize class="w-5 h-5" />
     </button>
 
     <button on:click={appWindow.close} class="btn btn-ghost w-12 h-8 min-h-10 rounded-none hover:bg-error/80">
-      <X class="w-5 h-5" strokeWidth="2.5" />
+      <X class="w-5 h-5" />
     </button>
   </div>
 </div>
