@@ -1,7 +1,7 @@
 <script>
-  import { appWindow } from "@tauri-apps/api/window";  
+  import { appWindow } from '@tauri-apps/api/window'
 
-  import { ChevronDown, Minus, Maximize, X } from "lucide-svelte"
+  import { ChevronDown, Minus, Maximize, X } from 'lucide-svelte'
 </script>
 
 <div class="flex flex-1 items-center justify-between">
