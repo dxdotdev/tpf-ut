@@ -31,7 +31,7 @@
 		"windows": [
 			{
 				"decorations": false,
-				"transparent": true,
+				"transparent": false,
 				"resizable": false,
 				"width": 1024,
 				"height": 640
@@ -48,7 +48,6 @@
 				"icons/32x32.png",
 				"icons/128x128.png",
 				"icons/128x128@2x.png",
-				"icons/icon.icns",
 				"icons/icon.ico"
 			]
 		}
