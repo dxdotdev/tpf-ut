@@ -11,8 +11,6 @@
   import { MousePointerClick, Link } from 'lucide-svelte'
 
   const currentContext = writable<AppContext | null>(null)
-  $: currentContext.set(null)
-
   setContext('currentContext', currentContext)
 </script>
 
