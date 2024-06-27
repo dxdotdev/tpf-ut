@@ -1,4 +1,7 @@
 <script lang="ts">
+  import type { AppContext } from '../types.ts'
+
+  import { setContext } from 'svelte'
   import { writable } from 'svelte/store'
 
   import TitleBar from '../components/titlebar/index.svelte'
@@ -7,25 +10,10 @@
 
   import { MousePointerClick, Link } from 'lucide-svelte'
 
-  type Context = {
-    path: string
-  }
+  const currentContext = writable<AppContext | null>(null)
+  $: currentContext.set(null)
 
-  const context = writable<Context | null>(null)
-
-  type Alert = {
-    type: 'info' | 'warning' | 'error'
-    message: string
-  }
-
-  const alert = writable<Alert | null>()
-
-  if (!$context) {
-    alert.set({
-      type: 'error',
-      message: 'Sem contexto selecionado!',
-    })
-  }
+  setContext('currentContext', currentContext)
 </script>
 
 <TitleBar />
