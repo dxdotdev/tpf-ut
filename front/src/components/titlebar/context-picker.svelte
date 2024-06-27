@@ -34,7 +34,7 @@
 
 <div class="tooltip tooltip-bottom" data-tip="Contexto">
   <label>
-    <div class="btn btn-sm btn-ghost px-8">
+    <div class="btn btn-ghost btn-sm px-8">
       {$currentContext?.path.toUpperCase() || 'SEM CONTEXTO'}
     </div>
 

@@ -2,7 +2,7 @@
   import Alerts from './alerts.svelte'
 </script>
 
-<footer class="flex flex-col items-end p-4 gap-4 absolute right-0 bottom-0">
+<footer class="absolute bottom-0 right-0 flex flex-col items-end gap-4 p-4">
   <Alerts />
 
   <p>

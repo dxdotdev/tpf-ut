@@ -13,10 +13,10 @@
   }
 </script>
 
-<div class="flex-col-reverse toast pb-14">
+<div class="toast flex-col-reverse pb-14">
   {#each $alerts as alert, i}
-    <div role="alert" class="alert alert-error p-3 bg-error/40 border-2 border-error/60 backdrop-blur-sm shadow-md">
-      <CircleX class="w-5 h-5" />
+    <div role="alert" class="alert alert-error border-2 border-error/60 bg-error/40 p-3 shadow-md backdrop-blur-sm">
+      <CircleX class="h-5 w-5" />
 
       {alert.message}
 
@@ -24,9 +24,9 @@
         on:click={() => {
           close(i)
         }}
-        class="btn btn-sm btn-ghost btn-circle"
+        class="btn btn-circle btn-ghost btn-sm"
       >
-        <X class="w-4 h-4" />
+        <X class="h-4 w-4" />
       </button>
     </div>
   {/each}
