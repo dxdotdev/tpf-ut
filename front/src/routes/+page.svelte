@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { AppContext } from '../types.ts'
+  import type { Alert, AppContext } from '../types.ts'
 
   import { setContext } from 'svelte'
   import { writable } from 'svelte/store'
@@ -12,6 +12,13 @@
 
   const currentContext = writable<AppContext | null>(null)
   setContext('currentContext', currentContext)
+
+  const alerts = writable<Alert[]>([])
+  setContext('alerts', alerts)
+
+  alerts.subscribe((alerts) => {
+    if (alerts.length > 5) alerts.shift()
+  })
 </script>
 
 <TitleBar />

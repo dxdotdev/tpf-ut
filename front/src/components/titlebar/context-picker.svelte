@@ -1,10 +1,11 @@
 <script lang="ts">
   import type { Writable } from 'svelte/store'
-  import type { AppContext } from '../../types'
+  import type { Alert, AppContext } from '../../types'
 
-  import { setContext, getContext } from 'svelte'
+  import { getContext } from 'svelte'
 
   const currentContext: Writable<AppContext | null> = getContext('currentContext')
+  const alerts: Writable<Alert[]> = getContext('alerts')
 
   function validateFile() {
     const input: HTMLInputElement = document.querySelector('#context-input')!
@@ -13,8 +14,21 @@
     const fileExtension = filePath?.substring(fileExtensionStart, filePath.length)
 
     if (fileExtension !== 'ut') {
-      setContext('currentContext', { path: 'janskdnsdk' })
+      input.value = ''
+      currentContext.set(null)
+
+      alerts.update((alerts) => {
+        alerts.push({
+          type: 'error',
+          message: 'Arquivo de contexto inválido!',
+        })
+        return alerts
+      })
+
+      return
     }
+
+    currentContext.set({ path: filePath })
   }
 </script>
 
