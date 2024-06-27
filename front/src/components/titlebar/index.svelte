@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { appWindow } from '@tauri-apps/api/window'
 
   import { ChevronDown, Minus, Maximize, X } from 'lucide-svelte'
