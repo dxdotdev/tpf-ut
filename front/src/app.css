@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  @apply flex h-screen w-screen flex-col bg-base-100/60;
-  background-image: radial-gradient(100vw, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+  @apply flex h-screen w-screen flex-col rounded-xl border border-base-100/40 bg-base-100/10;
+  /* background-image: radial-gradient(100vw, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)); */
   user-select: none;
   cursor: default;
 }

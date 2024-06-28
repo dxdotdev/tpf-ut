@@ -8,8 +8,8 @@
   }
 </script>
 
-<section class="mx-10 space-y-10 pt-12">
-  <h1 class="text-5xl font-bold">{title}</h1>
+<section class="mx-10 space-y-6 pt-10">
+  <h1 class="text-3xl font-semibold">{title}</h1>
 
   <div class="flex flex-1 gap-2">
     <slot {S} />
