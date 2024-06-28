@@ -42,7 +42,7 @@
     },
     "bundle": {
       "active": true,
-      "targets": "all",
+      "targets": "msi",
       "identifier": "com.dx.dev",
       "icon": [
         "icons/32x32.png",

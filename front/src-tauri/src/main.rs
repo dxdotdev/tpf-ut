@@ -9,7 +9,7 @@ fn main() {
         .setup(|app| {
             let window = app.get_window("main").unwrap();
 
-            #[cfg(target_os = "windows")]
+            // #[cfg(target_os = "windows")]
             apply_mica(&window, Some(true))
                 .expect("Unsupported platform! 'apply_mica' is only supported on Windows");
 
