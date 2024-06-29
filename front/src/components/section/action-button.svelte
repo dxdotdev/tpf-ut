@@ -11,7 +11,7 @@
 
 <div class="tooltip" data-tip={tooltip}>
   <button
-    class="btn btn-square flex items-center justify-center border-2 border-neutral/10 hover:border-neutral/20 hover:bg-secondary"
+    class="btn btn-square btn-sm flex items-center justify-center border-2 border-neutral/10 hover:border-neutral/20 hover:bg-secondary"
     disabled={!$currentContext}
   >
     <slot />

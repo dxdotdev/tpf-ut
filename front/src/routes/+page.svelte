@@ -25,11 +25,11 @@
 
 <Section title="Utilidades" let:S>
   <S.ActionButton tooltip="Seleção">
-    <MousePointerClick class="h-6 w-6" />
+    <MousePointerClick class="h-5 w-5" />
   </S.ActionButton>
 
   <S.ActionButton tooltip="Links">
-    <Link class="h-5 w-5" />
+    <Link class="h-4 w-4" />
   </S.ActionButton>
 </Section>
 
