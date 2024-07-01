@@ -8,8 +8,8 @@
 
 <header data-tauri-drag-region class="flex flex-1 items-center justify-between">
   <div data-tauri-drag-region class="flex flex-1 items-center gap-2">
-    <span class="ml-4 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-xs">D</span>
-    <span class="text-sm">Davi Reis</span>
+    <!-- <span class="ml-4 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-xs">D</span> -->
+    <!-- <span class="text-sm">Davi Reis</span> -->
   </div>
 
   <ContextPicker />
@@ -33,7 +33,7 @@
     <!-- <Maximize class="h-4 w-4" /> -->
     <!-- </button> -->
 
-    <button on:click={appWindow.close} class="btn btn-ghost btn-sm w-12 rounded-none hover:bg-error/80">
+    <button on:click={appWindow.close} class="btn btn-ghost btn-sm w-12 rounded-none rounded-tr-xl hover:bg-error/80">
       <X class="h-4 w-4" />
     </button>
   </div>
