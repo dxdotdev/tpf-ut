@@ -13,7 +13,7 @@
   }
 </script>
 
-<div class="toast flex-col-reverse pb-14">
+<div class="toast flex-col-reverse pb-10">
   {#each $alerts as alert, i}
     <div role="alert" class="alert alert-error border-2 border-error/60 bg-error/40 p-3 shadow-md backdrop-blur-sm">
       <CircleX class="h-4 w-4" />

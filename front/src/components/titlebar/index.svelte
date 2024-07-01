@@ -6,8 +6,8 @@
   import ContextPicker from './context-picker.svelte'
 </script>
 
-<header data-tauri-drag-region class="flex flex-1 items-center justify-between">
-  <div data-tauri-drag-region class="flex flex-1 items-center gap-2">
+<header data-tauri-drag-region class="flex items-center justify-between">
+  <div data-tauri-drag-region class="flex flex-1 items-center">
     <!-- <span class="ml-4 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-xs">D</span> -->
     <!-- <span class="text-sm">Davi Reis</span> -->
   </div>
@@ -25,16 +25,16 @@
       </ul>
     </details> -->
 
-    <button on:click={appWindow.minimize} class="btn btn-ghost btn-sm w-12 rounded-none">
-      <Minus class="h-4 w-4" />
+    <button on:click={appWindow.minimize} class="btn btn-ghost h-8 min-h-8 rounded-none">
+      <Minus class="h-3 w-3" />
     </button>
 
     <!-- <button on:click={appWindow.toggleMaximize} class="btn btn-ghost h-10 min-h-10 w-14 rounded-none"> -->
     <!-- <Maximize class="h-4 w-4" /> -->
     <!-- </button> -->
 
-    <button on:click={appWindow.close} class="btn btn-ghost btn-sm w-12 rounded-none rounded-tr-xl hover:bg-error/80">
-      <X class="h-4 w-4" />
+    <button on:click={appWindow.close} class="btn btn-ghost h-8 min-h-8 rounded-none rounded-tr-xl hover:bg-error/80">
+      <X class="h-3 w-3" />
     </button>
   </div>
 </header>

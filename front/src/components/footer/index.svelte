@@ -5,7 +5,7 @@
 <footer class="absolute bottom-0 right-0 flex flex-col items-end gap-4 p-4">
   <Alerts />
 
-  <p class="text-sm">
+  <p class="text-xs">
     developed by
     <a href="https://github.com/dreisss" class="link" target="_blank">dreisss.dev</a>.
   </p>

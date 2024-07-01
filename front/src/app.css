@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 :root {
-  @apply flex h-screen w-screen flex-col overflow-hidden rounded-xl border border-base-100/80 bg-base-100/60;
+  @apply flex h-screen w-screen flex-col overflow-hidden rounded-xl bg-base-100/40;
   user-select: none;
   cursor: default;
+
+  /* fix for linux ui scale change -- REMOVE ON BUILD TO WINDOWS */
+  /* font-size: 20px; */
 }

@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { Alert, AppContext } from '../types.ts'
-
   import { setContext } from 'svelte'
   import { writable } from 'svelte/store'
 
@@ -25,11 +24,11 @@
 
 <Section title="Utilidades" let:S>
   <S.ActionButton tooltip="Seleção">
-    <MousePointerClick class="h-5 w-5" />
+    <MousePointerClick />
   </S.ActionButton>
 
   <S.ActionButton tooltip="Links">
-    <Link class="h-4 w-4" />
+    <Link />
   </S.ActionButton>
 </Section>
 
